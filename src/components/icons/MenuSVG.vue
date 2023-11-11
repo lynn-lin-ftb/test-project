@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" hight="100%" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
     <line
       x1="0.379578"
       y1="2.8696"

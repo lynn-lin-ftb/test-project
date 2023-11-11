@@ -8,51 +8,24 @@
         >
           {{ title }}
         </h1>
-        <logo
-          class="
-            absolute
-            top-[calc(50%-37px)]
-            right-[-37px]
-            xl:top-[calc(50%-48.5px)] xl:right-[-48.5px]
-          "
-        ></logo>
+        <Logo class="absolute top-[calc(50%-37px)] right-[-37px] xl:top-[calc(50%-48.5px)] xl:right-[-48.5px]" />
       </div>
-
-      <div class="px-10 pb-10 text-center">
-        <ul>
-          <li v-for="n in menu" :key="n.link" class="py-2.5">
-            <router-link
-              to="/"
-              class="
-                text-black text-lg
-                cursor-pointer
-                hover:text-[#AA6666] hover:border-b-2 hover:border-[#AA6666]
-              "
-            >
-              <span>{{ n.name }}</span>
-            </router-link>
-          </li>
-        </ul>
-      </div>
+      <Menu />
     </div>
   </aside>
 </template>
 
 <script setup>
-import { reactive, ref } from 'vue';
-import Logo from '@/components/Logo.vue';
-import { SITE_TITLE } from '@/utils/data.js';
+  import { reactive, ref, computed } from 'vue'
+  import { useRouter } from 'vue-router'
+  import Logo from '@/components/Logo.vue'
+  import Menu from '@/components/Menu.vue'
+  import { SITE_TITLE } from '@/utils/data.js'
 
-const title = ref(SITE_TITLE);
-const menu = reactive([
-  { name: '白頭翁的特性', link: 'traits' },
-  { name: '白頭翁的故事', link: 'story' },
-  { name: '白頭翁的美照', link: 'photo' },
-  { name: '白頭翁的危機', link: 'crisis' },
-]);
+  const title = ref(SITE_TITLE)
 </script>
 
 <style lang="sass" scoped>
-.shadow
-  box-shadow: 4px 0 4px rgba(0,0,0,0.25)
+  .shadow
+    box-shadow: 4px 0 4px rgba(0,0,0,0.25)
 </style>

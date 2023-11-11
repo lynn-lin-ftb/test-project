@@ -1,5 +1,5 @@
 <template>
-  <svg viewBox="0 0 325 325" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="100%" hight="100%" viewBox="0 0 325 325" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse
       cx="187.847"
       cy="156.508"
