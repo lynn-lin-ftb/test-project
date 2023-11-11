@@ -20,7 +20,7 @@
         <el-skeleton animated style="width: 100%; margin: 0 auto">
           <template #template>
             <div class="py-2.5" v-for="n in [1,2,3,4]" :key="n">
-              <el-skeleton-item variant="h2" style="width: 50%" />
+              <el-skeleton-item variant="h3" style="width: 50%" />
             </div>
           </template>
         </el-skeleton>
