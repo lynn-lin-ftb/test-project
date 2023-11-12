@@ -1,5 +1,5 @@
 <template>
-  <nav :class="[showMenu ? 'h-auto': 'h-20 nav-shadow','block lg:hidden fixed top-0 inset-x-0 z-10']">
+  <nav :class="[showMenu ? 'h-auto': 'h-20 nav-shadow','block lg:hidden fixed top-0 inset-x-0 z-10 min-w-[320px]']">
     <div class="h-20 flex justify-between items-center px-4 relative bg-white z-20">
       <div class="w-[24px] h-[24px] mx-3 cursor-pointer" @click="toggleMenu(!showMenu)">
         <CloseSVG v-if="showMenu" class="animate-spin anima-spin" />
