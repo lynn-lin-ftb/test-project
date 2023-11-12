@@ -22,6 +22,11 @@
     </div>
   </nav>
 </template>
+
+<script setup>
+  import { ElSkeleton, ElSkeletonItem } from 'element-plus'
+</script>
+
 <style lang="sass" scoped>
 .nav-shadow
   box-shadow: 0 4px 4px rgba(0,0,0,0.25)

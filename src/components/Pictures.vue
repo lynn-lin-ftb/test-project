@@ -5,7 +5,7 @@
       :key="n.srcset"
       :srcset="n.srcset"
       :media="n.media">
-    <img :src="props.minImgUrl" class="w-full">
+    <img :src="props.minImgUrl" class="w-full brightness-90">
   </picture>
 </template>
 

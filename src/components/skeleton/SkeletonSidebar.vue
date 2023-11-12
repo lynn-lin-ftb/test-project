@@ -29,6 +29,9 @@
   </aside>
 </template>
 
+<script setup>
+  import { ElSkeleton, ElSkeletonItem } from 'element-plus'
+</script>
 
 <style lang="sass" scoped>
   .shadow
