@@ -1,12 +1,14 @@
 <template>
   <div class="w-full bf-bg">
-    <div class="relative h-auto lg:h-[calc(70.4vw*0.57)] lg:max-h-[70%] overflow-hidden">
-      <Pictures
-        :minImgUrl="smImg"
-        :source="[
-          {'srcset': img, 'media': '(min-width:768px)'},
-          {'srcset': mdImg, 'media': '(min-width:640px)'}
-        ]" />
+    <div class="relative">
+      <div class="h-[311px] md:h-[336px] lg:h-[481px] xl:h-[559px] 2xl:h-[673px] flex items-center overflow-hidden">
+        <Pictures
+          :minImgUrl="smImg"
+          :source="[
+            {'srcset': img, 'media': '(min-width:768px)'},
+            {'srcset': mdImg, 'media': '(min-width:640px)'}
+          ]" />
+      </div>
       <div class="text-white absolute inset-x-[1.5rem] bottom-7 md:right-10 md:bottom-5 text-end">
         <h1 class="text-5xl font-bold leading-[1.1]">
           <span class="block lg:inline">{{ title }}</span>
